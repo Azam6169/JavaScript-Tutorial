@@ -9,7 +9,8 @@ var person = {
 
 console.log(person);
 console.log(person["lastName"]);
-
+//In a function definition, this refers to the "owner" of the function.In the example above, this is the person object that "owns" the fullName function.
+//In other words, this.firstName means the firstName property of this object.
 var person = {
     firstName: "John",
     lastName : "Doe",
