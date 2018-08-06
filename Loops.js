@@ -10,11 +10,14 @@ while(number <= 12){
     var text = " "
     var i = 0;
     do {
+        text += "\n";
         text += "The number is " + i  ;
+       
         i++;
     }
     while (i < 5);
     console.log(text);
+     
     
 
 
