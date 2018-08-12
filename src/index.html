@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/angularjs-gauge@2.2.0/dist/angularjs-gauge.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div ng-app="yourApp">
+            <ul>
+                    <li><a class="active" href="#home">Log Out</a></li>
+                    <li><a href="#news">Hello ,16@test.com</a></li>
+                    <p class="websiteName"><b><img src="logo.png" alt="logo" width="5" height="30" />VertureX :Prototype</b></p>
+            </ul>
+                
+            <img src="foto.jpg" alt="Foto" >
+            <div class="boxed">
+                    <h2><b><font size="3">Market</font></b>&emsp;<font size="2">Fill in who are your customers?</font><br> 
+                    <h2><b><font size="3">pain</font></b>&emsp;<font size="2">What is the pain statment that you are trying to solve<br>for them?</font><br>     
+                    <h2><b><font size="3">Benefit</font></b>&emsp;<font size="2">What is the benefit that will match that pain<br>statment?</font>  
+
+                    <button type="button" class="btn btn-default" style="float: right">Edit Profile</button>
+                </div>
+                <p class="venturX"><font size="6">How is<b>VenturX&nbsp;<span class="glyphicon glyphicon-pencil"></span>&nbsp;</b>doing today?</font><b><font size="3"><font color="gray">check dashboard </font></b></p>
+
+
+    
+            <ng-gauge size="150" type="full" thick="5" 
+                min="0" max="127" value="27" 
+                cap="round" label="Product" append="%"
+                foreground-color="#FF8000" background-color="#EEE" >
+            </ng-gauge>
+
+            <ng-gauge size="150" type="full" thick="5" 
+                min="0" max="30" value="3" 
+                cap="round" label="Runway" append="month"
+                foreground-color="#FF0000" background-color="#EEE"  margin-left=15px;>
+            </ng-gauge>
+
+            <ng-gauge size="150" type="full" thick="5" 
+                min="0" max="124" value="24" 
+                cap="round" label="conversion" append="%"
+                foreground-color="#FE642E" background-color="#EEE" margin-left=15px;>
+            </ng-gauge>
+
+            <ng-gauge size="150" type="full" thick="5" 
+                    min="0" max="100" value="100" 
+                    cap="round" label="Engagement" append="%"
+                    foreground-color="#80FF00" background-color="#EEE"  margin-left=50px;>
+            </ng-gauge>
+            
+            <p class="conversation"><b>Small conversation?&nbsp;</b>learn what you can do<b>to raise your conversion</b></p>
+            <p class="produce"><b>Low produce score?&nbsp;try this&nbsp;</b>to get more</p>
+        </div>
+    <script>
+        angular.module('yourApp', ['angularjs-gauge']);
+    </script>
+</body>
+</html>
