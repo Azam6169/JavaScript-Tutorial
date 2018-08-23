@@ -21,5 +21,18 @@ var person = {
 };
 console.log(person.fullName());
 
-var person = {name:"John", age:50};
+var person = {name:"Shaina", age:38};
 console.log(person.name + " is " + person.age + " years old.");
+
+
+var person = {
+    firstName : "Azam",
+    lastName  : "Shirani",
+    age       : 20,
+    eyeColor  : "Brown"
+};
+
+// Display some data from the object:
+
+x = person.firstName + " is " + person.age + " years old" + " with " + person.eyeColor + " EyeColor " ;
+console.log(x);
