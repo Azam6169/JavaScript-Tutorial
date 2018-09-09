@@ -21,7 +21,12 @@ console.log(typeof fruits);
 //To solve this problem ECMAScript 5 defines a new method Array.isArray():
 console.log(Array.isArray(fruits));
 
+//Also To solve this problem you can create your own isArray() function:
 
+
+function isArray(myArray) {
+    return myArray.constructor.toString().indexOf("Array") > -1;
+}
 
 
 
