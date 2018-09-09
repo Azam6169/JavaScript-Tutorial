@@ -18,6 +18,9 @@ console.log(points[4]);
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log(typeof fruits);
 
+//To solve this problem ECMAScript 5 defines a new method Array.isArray():
+console.log(Array.isArray(fruits));
+
 
 
 
