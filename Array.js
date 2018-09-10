@@ -27,6 +27,17 @@ console.log(Array.isArray(fruits));
 function isArray(myArray) {
     return myArray.constructor.toString().indexOf("Array") > -1;
 }
+var fruits, text, fLen, i;
+
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+ 
+for (i = 0; i < fLen; i++) {
+
+console.log( fruits[i] ); 
+    
+}
+
 
 
 
