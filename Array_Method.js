@@ -20,3 +20,16 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruits);
 
 //The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon")
+console.log(fruits);
+
+
+//The shift() method returns the element that was shifted out.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift()
+console.log(fruits);
+
+
+fruits.unshift("Lemon");
+
